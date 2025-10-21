@@ -24,9 +24,9 @@ def test_predict_setosa():
 
     # Check that the prediction is correct
     data = response.json()
-    assert data["label"] == "setosa"
+    assert data["label"] == "Setosa"
     assert data["prediction"]
-    
+
 def test_predict_bad_input():
     """Tests the API's validation. What if we send a string?"""
     payload = {
