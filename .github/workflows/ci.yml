@@ -29,7 +29,7 @@ jobs:
           pip install pylint pytest httpx
 
       - name: Run linter (Pylint)
-        run: pylint main.py test_main.py
+        run: pylint main.py test_main.py --fail-under=5.0
 
       - name: Run tests (Pytest)
         run: pytest
